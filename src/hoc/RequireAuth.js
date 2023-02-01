@@ -7,7 +7,7 @@ const RequireAuth = ({children}) => {
 
     const location = useLocation()
     const {user}=useAuthContext();
-    console.log(user);
+
 
     if (!user){
 
