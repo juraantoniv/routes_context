@@ -1,16 +1,18 @@
 
 import './App.css';
 import { Route, Routes } from "react-router-dom";
-import MainLayout from "./layouts/Main.Layout/Main.Layout";
-import UsersPage from "./pages/Users.Page/UsersPage";
-import AlbumsPage from "./pages/Albums.Page/AlbumsPage";
-import TodosPage from "./pages/Todos.Page/TodosPage";
-import CommentsPage from "./pages/Comments.Page/CommentsPage";
+
 import {RouterEndpoints} from "./routes/routes";
-import Posts from "./components/Posts/Posts";
-import LoginPage from "./pages/LoginPage/LoginPage";
+import MainLayout from "./layouts/Main.Layout/Main.Layout";
+import AlbumsPage from "./pages/Albums.Page/AlbumsPage";
 import RequireAuth from "./hoc/RequireAuth";
-import Users from "./components/Users/Users";
+import UsersPage from "./pages/Users.Page/UsersPage";
+import TodosPage from "./pages/Todos.Page/TodosPage";
+import LoginPage from "./pages/LoginPage/LoginPage";
+import CommentsPage from "./pages/Comments.Page/CommentsPage";
+import Posts from "./components/Posts/Posts";
+
+
 
 function App() {
   return (
@@ -18,7 +20,7 @@ function App() {
       <Routes>
           <Route path={RouterEndpoints.index} element={<MainLayout/>}>
           <Route path={RouterEndpoints.users}  element={
-                <RequireAuth>
+              <RequireAuth>
               <UsersPage/>
                 </RequireAuth>}/>
           <Route path={RouterEndpoints.albums}  element={<AlbumsPage/>}/>
