@@ -3,7 +3,7 @@ import {NavLink} from "react-router-dom";
 import {useAuthContext} from "../../hooks/UseAuthContext/UserAuthContext";
 
 const Header = () => {
-    const {logOut}=useAuthContext();
+    const {logIn,logOut,user}=useAuthContext();
     return (
         <div>
             <div className={'side-bar'}>
@@ -11,7 +11,7 @@ const Header = () => {
                 <NavLink to={'albums'}>Albums</NavLink>
                 <NavLink to={'comments'}>Comments</NavLink>
                 <NavLink to={'users'}>Users</NavLink>
-                <button onClick={()=>logOut()}>logOut</button>
+                <button disabled={!user} onClick={()=>logOut()}>logOut</button>
             </div>
         </div>
     );

@@ -3,7 +3,7 @@ import {useAuthContext} from "../../hooks/UseAuthContext/UserAuthContext";
 import {useLocation, useNavigate} from "react-router-dom";
 
 const LoginPage = () => {
-    const {logIn,logOut}=useAuthContext();
+    const {logIn,logOut,user}=useAuthContext();
     const {state}=useLocation()
     const navigate = useNavigate()
     const username= useRef()
@@ -17,7 +17,7 @@ const LoginPage = () => {
     return (
         <div>
             <input type="text" placeholder={'username'} ref={username}/>
-            <button onClick={()=>login()}>Login</button>
+            <button onClick={()=>login()}>Log In</button>
         </div>
     );
 };
