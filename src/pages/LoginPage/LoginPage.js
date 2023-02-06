@@ -16,7 +16,7 @@ const LoginPage = () => {
         console.log('yes')
     return (
         <div>
-            <input type="text" placeholder={'username'} ref={username}/>
+            <input type="text" placeholder={'username_for_login'} ref={username}/>
             <button onClick={()=>login()}>Log In</button>
         </div>
     );
