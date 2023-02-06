@@ -6,7 +6,7 @@ const Header = () => {
     const {logIn,logOut,user}=useAuthContext();
     return (
         <div>
-            <div className={'side-bar'}>
+            <div>
                 <NavLink to={'todos'}>Todos</NavLink>
                 <NavLink to={'albums'}>Albums</NavLink>
                 <NavLink to={'comments'}>Comments</NavLink>
