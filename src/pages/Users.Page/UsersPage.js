@@ -14,8 +14,7 @@ const UsersPage = () => {
 
     useEffect(()=>{
 
-        userRequest.getAll().then(({data})=>dispatch(userActions.getAllAsync(data)))
-
+        dispatch(userActions.getAllAsync())
 
     },[])
 
