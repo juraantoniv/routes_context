@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {albumRequest} from "../../api/services/album.service";
-import {Albums} from "../../components/Albums/Albums";
+import {Albums} from "../../components";
 
 
 const AlbumsPage = () => {

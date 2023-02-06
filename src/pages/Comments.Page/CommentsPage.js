@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import {userRequest} from "../../api/services/user.services";
 import Comments from "../../components/Comments/Comments";
 import {commentsRequest} from "../../api/services/comments.service";
 import {Outlet} from "react-router-dom";

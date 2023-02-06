@@ -1,5 +1,5 @@
 export * from './Users/Users'
-export * from '/Header/Header'
+export * from './Header/Header'
 export * from './Posts/Posts'
 export * from './Albums/Albums'
 export * from './Comments/Comments'
