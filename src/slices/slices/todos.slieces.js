@@ -66,7 +66,7 @@ const commentsActions ={
     getAll,
     setCurrentPost,
     deleteById,
-    getAllAsyncTodos
+    getAllAsyncComments
 }
 
 export {
