@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import Users from "../../components/Users/Users";
-import {userRequest} from "../../api/services/user.services";
 import {useDispatch, useSelector} from "react-redux";
 import {userActions} from "../../slices/slices/users.slices";
 
