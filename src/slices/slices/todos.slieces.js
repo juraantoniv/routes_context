@@ -3,7 +3,7 @@ import {todosRequest} from "../../api/services/todos.service";
 
 
 const initialState ={
-    todos:[],
+    comments:[],
     loading:false,
     error:null,
 }
