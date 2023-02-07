@@ -2,17 +2,23 @@ import React, {useEffect, useState} from 'react';
 
 import {todosRequest} from "../../api/services/todos.service";
 import Todos from "../../components/Todos/Todos";
+import {useDispatch, useSelector} from "react-redux";
+import {userActions} from "../../slices/slices/users.slices";
+import {todosActions} from "../../slices/slices/todos.slieces";
 
 const TodosPage = () => {
 
 
-    const [todos,setTodos]=useState([])
+    const dispatch = useDispatch()
+    const {todos}=useSelector(state => state.todosReducer)
 
 
     useEffect(()=>{
-        todosRequest.getAll().then(({data})=>setTodos([...data]))
+
+        dispatch(todosActions.getAllAsyncTodos())
 
     },[])
+
     return (
         <div>
             <Todos todos={todos}/>

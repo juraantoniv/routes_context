@@ -1,11 +1,11 @@
 import {combineReducers, configureStore} from "@reduxjs/toolkit";
-import {userReducer} from "./slices/Users.slices";
+import {userReducer} from "./slices/users.slices";
+import {todosReducer} from "./slices/todos.slieces";
 
 
 const rootReducer =combineReducers({
     userReducer,
-
-
+    todosReducer
 })
 
 const setupStore =()=>configureStore({
