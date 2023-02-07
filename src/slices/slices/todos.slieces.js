@@ -9,7 +9,7 @@ const initialState ={
 }
 
 
-const getAllAsyncTodos = createAsyncThunk(
+const getAllAsyncComments= createAsyncThunk(
     'userSlice/getAll',
     async (_,{rejectWithValue})=>{
 
