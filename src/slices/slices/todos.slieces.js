@@ -45,7 +45,7 @@ const todosSlice = createSlice({
     extraReducers: builder =>
         builder
             .addCase(getAllAsyncComments.fulfilled, (state, action) => {
-                state.todos = action.payload
+                state.comments = action.payload
                 state.loading = false
             })
             .addCase(getAllAsyncComments.rejected, (state, action) => {
