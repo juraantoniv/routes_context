@@ -48,7 +48,7 @@ const todosSlice = createSlice({
                 state.todos = action.payload
                 state.loading = false
             })
-            .addCase(getAllAsyncTodos.rejected, (state, action) => {
+            .addCase(getAllAsyncComments.rejected, (state, action) => {
                 state.error = action.payload
                 state.loading = false
 
