@@ -62,7 +62,7 @@ const todosSlice = createSlice({
 
 const {reducer:todosReducer,actions:{getAll,setCurrentPost,deleteById}}=todosSlice
 
-const todosActions ={
+const commentsActions ={
     getAll,
     setCurrentPost,
     deleteById,
