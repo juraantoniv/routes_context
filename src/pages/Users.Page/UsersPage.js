@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 import Users from "../../components/Users/Users";
 import {useDispatch, useSelector} from "react-redux";
 import {userActions} from "../../slices/slices/users.slices";
