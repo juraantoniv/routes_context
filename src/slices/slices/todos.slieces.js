@@ -42,11 +42,6 @@ const todosSlice = createSlice({
         //     console.log(current(state.posts));
         // }
     },
-    // extraReducers:{
-    //     [getAllAsync.fulfilled]:(state,action)=>{
-    //         state.posts =action.payload
-    //     }
-    // },
     extraReducers: builder =>
         builder
             .addCase(getAllAsyncTodos.fulfilled, (state, action) => {
