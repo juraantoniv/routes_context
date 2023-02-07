@@ -71,5 +71,5 @@ const commentsActions ={
 
 export {
     todosReducer,
-    todosActions
+    commentsActions
 }
