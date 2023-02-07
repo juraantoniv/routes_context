@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 
-import {todosRequest} from "../../api/services/todos.service";
+
 import Todos from "../../components/Todos/Todos";
 import {useDispatch, useSelector} from "react-redux";
 import {userActions} from "../../slices/slices/users.slices";
