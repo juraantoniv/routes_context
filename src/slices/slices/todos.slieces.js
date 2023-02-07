@@ -70,6 +70,6 @@ const commentsActions ={
 }
 
 export {
-    todosReducer,
+    commentsReducer,
     commentsActions
 }
