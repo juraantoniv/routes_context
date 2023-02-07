@@ -53,7 +53,7 @@ const todosSlice = createSlice({
                 state.loading = false
 
             })
-            .addCase(getAllAsyncTodos.pending, (state, action) => {
+            .addCase(getAllAsyncComments.pending, (state, action) => {
                 state.loading = true
                 console.log(state.loading)
             })
